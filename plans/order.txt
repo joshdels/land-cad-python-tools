@@ -1,0 +1,51 @@
+1. Bearing Parser
+        ↓
+2. Quadrant → Azimuth
+        ↓
+3. Traverse Engine
+        ↓
+4. Plot Local Coordinates
+        ↓
+5. Read Reference Point Table
+        ↓
+6. Compute Point of Beginning (Tie Line)
+        ↓
+7. Shift Traverse to PPCS
+        ↓
+8. Transform to WGS84
+        ↓
+9. Export GeoJSON/Shapefile
+
+
+
+
+///
+
+Land Title
+      │
+      ▼
+Bearing Parser
+      │
+      ▼
+Traverse Engine
+      │
+      ▼
+✓ Polygon closes?
+      │
+      ▼
+Reference Points
+      │
+      ▼
+Tie Line
+      │
+      ▼
+PPCS Coordinates
+      │
+      ▼
+WGS84 Coordinates
+      │
+      ▼
+GeoJSON
+      │
+      ▼
+Leaflet / QGIS
