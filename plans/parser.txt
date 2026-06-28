@@ -1,0 +1,21 @@
+Read Text - Parser
+NS | Deg | Min | EW | Distance (m)
+
+
+Traverse Engine
+
+
+result 
+Point | X | Y |
+same format
+
+
+Tie Point / BLLM
+Projected Coordinates
+
+
+Export 
+DXF - GeoJSON - Shp - KML
+
+
+/////////////////////
