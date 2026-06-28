@@ -28,26 +28,10 @@ import re
 
 import re
 
-pattern = r"\S+\d"
-
-# text = """
-# Hello John,
-
-# Please email me at john@gmail.com.
-
-# For support contact support@company.com 12123
-
-# Thanks!
-
-# # Line A: "N 14 deg. 15' E"
-# """
-
-import re
-
 text = 'N 14 deg. 15\' E'
 
 pattern_direction= r"[NSEW]"
-pattern_digits = r"\S+\d"
+pattern_digits = r"\d{2}"
 
 direction = re.findall(pattern_direction, text)
 digits = re.findall(pattern_digits, text)
