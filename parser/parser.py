@@ -5,8 +5,8 @@ from dataclasses import dataclass
 @dataclass
 class BearingLeg:
     ns: str
-    degrees: int
-    minutes: int
+    degrees: float
+    minutes: float
     ew: str
     distance: float
 
@@ -19,8 +19,6 @@ def parse_bearing(text: str) -> BearingLeg:
     Examples:
         N 14 deg. 15' E 100m,
         S 45 deg 30 W 200m,
-
-
     """
 
     try:
@@ -30,10 +28,10 @@ def parse_bearing(text: str) -> BearingLeg:
 
         return BearingLeg(
             ns=directions[0],
-            degrees=numbers[0],
-            minutes=numbers[1],
+            degrees=float(numbers[0]),
+            minutes=float(numbers[1]),
             ew=directions[1],
-            distance=distance,
+            distance=float(distance),
         )
 
     except ValueError:
